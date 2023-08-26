@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .App {
   text-align: center;
 }
@@ -14,7 +17,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,6 +29,23 @@
 
 .App-link {
   color: #61dafb;
+}
+.background-animate {
+  background-size: 4000%;
+
+  -webkit-animation: AnimationName 3s ease infinite;
+  -moz-animation: AnimationName 3s ease infinite;
+  animation: AnimationName 10s ease infinite;
+}
+
+@keyframes AnimationName {
+  0%,
+  100% {
+    background-position: 0% 10%;
+  }
+  50% {
+    background-position: 100% 10%;
+  }
 }
 
 @keyframes App-logo-spin {
